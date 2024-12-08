@@ -1,0 +1,44 @@
+#two {
+  padding-left: 0;
+  padding-right: 0;
+  overflow: hidden;
+  background-color: darkred;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.groups {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 100%;
+  flex-wrap: nowrap;
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+.items {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 1 1 auto;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  white-space: nowrap;
+  flex: 0 0 auto;
+  margin: auto 10px;
+  background-color: darkcyan;
+  color: white;
+  border-radius: 5px;
+  overflow: hidden;
+}
