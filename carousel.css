@@ -42,3 +42,11 @@
   border-radius: 5px;
   overflow: hidden;
 }
+
+.item.start {
+  background-color: darkgreen;
+}
+
+.item.end {
+  background-color: darkblue;
+}

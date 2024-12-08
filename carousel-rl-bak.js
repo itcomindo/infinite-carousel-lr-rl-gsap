@@ -7,22 +7,20 @@ function infiniteHorizontalCarouselRL() {
     $groupItemsWrapper.clone().appendTo($groupsContainer);
     $groupItemsWrapper.clone().prependTo($groupsContainer);
 
-    //watch code below this fucking shit!!!
-    gsap.set($groupsContainer, { x: 0 });
+    gsap.set($groupsContainer, { x: -groupWidth });
 
     // Animasi GSAP
     gsap.to($groupsContainer, {
         x: '-=' + groupWidth, // Pindahkan ke kiri
-        duration: 60, // Durasi animasi
+        duration: 10, // Durasi animasi
         ease: "linear",
         repeat: -1,
         onRepeat: function () {
             // Pindahkan elemen pertama ke belakang sebelum animasi mengulang
-            // $groupsContainer.append($groupsContainer.children().first());
-            $groupsContainer.append($groupsContainer.children().last());
-            // $groupsContainer.append($groupsContainer.children().first());
-            gsap.set($groupsContainer, { x: +groupWidth }); // Reset posisi ke awal
+            $groupsContainer.append($groupsContainer.children().first());
+            gsap.set($groupsContainer, { x: -groupWidth }); // Reset posisi ke awal
         },
     });
 }
 infiniteHorizontalCarouselRL();
+

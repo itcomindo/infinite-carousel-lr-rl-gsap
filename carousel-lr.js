@@ -13,7 +13,7 @@ function infiniteHorizontalCarouselLR() {
     // Animasi GSAP
     gsap.to($groupsContainer, {
         x: '+=' + groupWidth, // Pindahkan ke kanan
-        duration: 40, // Durasi animasi
+        duration: 80, // Durasi animasi
         ease: "linear",
         repeat: -1,
         onRepeat: function () {
